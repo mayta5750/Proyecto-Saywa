@@ -1,0 +1,48 @@
+<div class="col agregar">
+    <div class="col-12">
+        <h3>Agregar Contenido</h3>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <form>           
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Elige que tipo de contenido quieres añadir:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Añada una descripción del contenido:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <p>¿Quieres incluir el nombre del docente que dicta la materia?</p>
+            <div class="input-group mb-6">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" (click)="mostrar()">
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="mostrardoc" class="llenar">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 env">
+        <button type="button" class="btn btn-secondary">Enviar</button>
+    </div>
+</div>

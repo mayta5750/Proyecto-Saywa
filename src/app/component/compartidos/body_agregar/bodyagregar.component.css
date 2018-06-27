@@ -1,0 +1,18 @@
+.agregar{
+    border: solid 1px #000000;
+    border-radius: 10px;
+    margin: 10px;
+}
+h3{
+    text-align: center;
+}
+.btn{
+    text-align: center;
+}
+.env{
+    text-align: center;
+    padding: 10px;
+}
+.llenar{
+    margin-top: 20px;
+}
